@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.parent {
+	border: thick dotted #000000;
+	height: 300px;
+	width: 300px;
+}
+
+.test {
+	border: thin solid #000000;
+	background: #ffffff;
+	height: 100px;
+	width: 100px;
+}
+
+#relative div {
+	position: relative;
+	left: 50px;
+	top: 50px;
+}
+#absolute div {
+	position: relative;
+	left: 30px;
+	top: 30px;
+}
+#fixed div {
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+}
+</style>
+</head>
+<body style="background: #cfcfcf">
+
+<p>Default</p>
+<div class="parent">
+<div class="test">Hello</div>
+</div>
+
+<p>Relative</p>
+<div id="relative" class="parent">
+<div class="test">Hello</div>
+</div>
+
+<p>Absolute</p>
+<div id="absolute" class="parent">
+<div class="test">Hello</div>
+</div>
+
+<p>Fixed</p>
+<div id="fixed" class="parent">
+<div class="test">Hello</div>
+</div>
+
+</div>
+
+</body>
+</html>

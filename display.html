@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.test {
+	border: thin solid #000000;
+	background: #ffffff;
+	height: 100px;
+	width: 100px;
+}
+#inline-block div {
+	display: inline-block
+}
+#inline div {
+	display: inline
+}
+#block span {
+	display: block
+}
+</style>
+</head>
+<body style="background: #cfcfcf">
+<div id="inline-block">
+	<p>Inline Block</p>
+	<div class="test">Hello</div>
+	<div class="test">Hello</div>
+	<div class="test">Hello</div>
+	<div class="test">Hello</div>
+</div>
+
+<div id="inline">
+	<p>Inline</p>
+	<div class="test">Hello</div>
+	<div class="test">Hello</div>
+	<div class="test">Hello</div>
+	<div class="test">Hello</div>
+</div>
+
+<div id="block">
+	<p>Block</p>
+	<span class="test">Hello</span>
+	<span class="test">Hello</span>
+	<span class="test">Hello</span>
+	<span class="test">Hello</span>
+</div>
+</div>
+
+</body>
+</html>
